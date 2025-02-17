@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Żart o kurach</title>
+    <style>
+        body {
+            font-family: "Georgia", serif;
+            font-style: italic;
+            font-weight: lighter;
+            text-align: center;
+            margin: 50px;
+        }
+        #image-container {
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        #punchline {
+            display: none;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: rgb(56, 22, 22);
+        }
+    </style>
+</head>
+<body>
+    <h1>Jak nazywają się kury, które jeżdżą na sankach?</h1>
+    <div id="image-container" onclick="showPunchline()">
+        <img src="Kurkakoko.jpeg" alt="Kura na sankach" width="300">
+    </div>
+    <p id="punchline">Kokosanki!</p>
+    
+    <script>
+        function showPunchline() {
+            document.getElementById('punchline').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
